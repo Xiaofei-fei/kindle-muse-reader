@@ -1,0 +1,4 @@
+# Default: only this computer can access the reader.
+# To enable Kindle access, set this to the computer's own LAN IPv4 address.
+KINDLE_MUSE_HOST=127.0.0.1
+KINDLE_MUSE_PORT=8766

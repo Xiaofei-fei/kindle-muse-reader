@@ -1,0 +1,27 @@
+# Runtime state, credentials and reader history must never be committed.
+state/
+work/
+outputs/
+backups/
+vendor/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.sqlite*
+*.db
+*.sock
+*.log
+.env
+.env.*
+!.env.example
+access_code
+sdk_token
+pairing.json
+identity.json
+*.pem
+*.key
+*.p12
+*.zip
+*.tar.gz
+.DS_Store

@@ -1,0 +1,18 @@
+Kindle Muse Reader
+Copyright 2026 Kindle Muse Reader contributors
+
+This is an independent community project. It is not an official product of
+Meta, Amazon, or AIHOT. Their names identify compatible services/devices.
+No third-party logos, SDK source tree, device firmware, books, credentials,
+reader databases, or live news datasets are included in this distribution.
+
+The optional Muse transport imports the independently installed Muse Gadget
+SDK (facebookincubator/muse-gadget-sdk), Copyright (c) Meta Platforms, Inc.
+and affiliates, licensed under Apache-2.0. Tested upstream commit:
+b139b45064b4dcecf7bfe97e75bc7f99c10c28b6.
+https://github.com/facebookincubator/muse-gadget-sdk
+
+AIHOT is an external data source. Its API and third-party articles are
+subject to their own usage rules and copyrights, not this code license.
+https://aihot.news/terms
+https://aihot.news/openapi-v1.json

@@ -1,0 +1,22 @@
+name: Bug report / 兼容性问题
+description: Report a reproducible bug without private data.
+body:
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python, Kindle model/firmware, news-only or Muse mode.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps and expected / actual behavior
+      description: Use synthetic text. Do not attach tokens, codes, cookies, databases or books.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: Test output and whether this was checked on the Kindle itself or a browser preview.

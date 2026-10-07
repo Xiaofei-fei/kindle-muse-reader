@@ -1,0 +1,28 @@
+[Unit]
+Description=Private Kindle Muse Reader
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=kindle-muse
+Group=kindle-muse
+Environment=PYTHONUNBUFFERED=1
+EnvironmentFile=/etc/kindle-muse-bridge.conf
+ExecStart=/usr/bin/python3 /opt/kindle-muse-bridge/src/bridge.py --host ${KINDLE_MUSE_HOST} --port ${KINDLE_MUSE_PORT} --state-dir /var/lib/kindle-muse-bridge --publish-socket /run/kindle-muse-bridge/publish.sock
+StateDirectory=kindle-muse-bridge
+StateDirectoryMode=0700
+RuntimeDirectory=kindle-muse-bridge
+RuntimeDirectoryMode=0700
+UMask=0077
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_UNIX
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
